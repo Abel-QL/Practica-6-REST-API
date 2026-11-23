@@ -78,6 +78,7 @@ app.post("/productos", (req, res) => {
 app.put("/productos/:id", (req, res) => {
   const id = parseInt(req.params.id);
   const newPrice = parseFloat(precio);
+  const { nombre, descripcion, precio } = req.body;
   const productoUpdate = { id, nombre, descripcion, precio: newPrice };
 
   //indice para encontrar/validar el id

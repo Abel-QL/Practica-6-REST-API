@@ -1,0 +1,7 @@
+NOMBRE: Abel Quezada Lorenzo 
+MATRÍCULA: 2025-1308
+PRÁCTICA: 6 — API REST de productos --- app.js --- 
+
+
+LINK REPOSITORIO GITHUB: https://github.com/Abel-QL/Practica-6-REST-API
+LINK VIDEO YOUTUBE: 
