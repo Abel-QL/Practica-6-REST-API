@@ -62,7 +62,6 @@ app.post("/productos", (req, res) => {
   }
 
   //que el valor del producto sera mayor a 0 y un numero flotanto
-
   if (isNaN(newPrice) || newPrice <= 0) {
     return res
       .status(400)
