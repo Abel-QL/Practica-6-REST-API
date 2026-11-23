@@ -46,7 +46,6 @@ app.get("/productos/:id", (req, res) => {
 // ============================================================
 
 // TODO: POST /productos - Crear nuevo producto
-
 app.post("/productos", (req, res) => {
   //Lo que usar
   const { nombre, descripcion, precio } = req.body;
@@ -77,8 +76,8 @@ app.post("/productos", (req, res) => {
 // TODO: PUT /productos/:id - Actualizar producto
 app.put("/productos/:id", (req, res) => {
   const id = parseInt(req.params.id);
+  const { nombre, descripcion, precio } = req.body || {};
   const newPrice = parseFloat(precio);
-  const { nombre, descripcion, precio } = req.body;
   const productoUpdate = { id, nombre, descripcion, precio: newPrice };
 
   //indice para encontrar/validar el id
